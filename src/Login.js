@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Alert, Button, TextInput, View, StyleSheet,Image,Text,TouchableOpacity } from 'react-native';
-import Loginstack from '../navigation/Loginstack';
+
 
 const Login=({navigation})=>{
     return (   
@@ -12,22 +12,21 @@ const Login=({navigation})=>{
         <TextInput
           
           
-          placeholder={'Username'}
+          placeholder='Username'
           style={styles.input}
         />
         <TextInput
          
          
-          placeholder={'Password'}
-          secureTextEntry={true}
+          placeholder='Password'
+          
           style={styles.input}
         />
         <View>
-        <Button
-          title={'Login'}
-          style={styles.input}
-          
-        />
+         
+          <Button onPress={() => navigation.navigate('Home')} title='Login' />
+        
+        
         </View>
         <TouchableOpacity  onPress={() => navigation.navigate('Signup')}>
         <Text style={{marginTop:20}}>Don't have account? Signup</Text>

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "coffeeorder",
-    "slug": "coffeeorder",
+    "name": "ScholarshipApp",
+    "slug": "ScholarshipApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
